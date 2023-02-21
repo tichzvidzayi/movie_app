@@ -5,8 +5,18 @@ const MovCard = () =>{
 
 return (
 
-    <div> MM</div>
+    <div className="card"> 
+    
+    <div className="poster">
+
+
+    </div>
+    
+    
+    </div>
 )
 
 
 }
+
+export default MovCard;
