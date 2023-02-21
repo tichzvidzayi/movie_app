@@ -2,6 +2,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 
+import MovCard from './Components/MovCard'
+
 
 function App() {
 
@@ -18,7 +20,7 @@ console.log(movies);
 
   return (
     <div className="App">
-      <div className='searchnav'>
+      <div className='search Snav'>
     <div>
       <h1>Movies </h1>
     </div>
@@ -42,9 +44,15 @@ console.log(movies);
       </div>
 
        
-
-
 <div className='movies'>
+
+{
+   movies.map((movie)=>
+    <MovCard {...movie} />
+   )
+
+}
+
 
 
 </div>
